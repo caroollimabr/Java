@@ -1,0 +1,14 @@
+
+public class TestaCondicional2 {
+	public static void main(String[] args) { // main + ctrl + espaço
+		System.out.println("Testando condicionais");// sysout + ctrl + espaço
+		int idade = 16;
+		boolean acompanhado = true; // só pode ser true ou false pelo tipo ser boolean
+
+		if (idade >= 18 || acompanhado) { //&& - e 
+			System.out.println("Seja bem-vindo!");
+		} else {
+			System.out.println("Infelizmente você não pode entrar.");
+		}
+	}
+}

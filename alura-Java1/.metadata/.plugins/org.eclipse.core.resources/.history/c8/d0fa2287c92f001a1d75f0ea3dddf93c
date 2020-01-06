@@ -1,0 +1,22 @@
+//para formatar: ctrl + shift + f --OU-- Source, Format
+//dois cliques em uma aba: maximizar
+public class TestaCondicional {
+
+	public static void main(String[] args) { // main + ctrl + espaço
+		System.out.println();// sysout + ctrl + espaço
+		int idade = 16;
+		int quantidadePessoas = 1;
+
+		if (idade >= 18) { // use as chaves independente de uma ou mais linhas para melhor visualização
+			System.out.println("Você é maior de idade.");
+			System.out.println("Seja bem-vindo!");
+		} else {
+			if (quantidadePessoas >= 2) {
+				System.out.println("Você é menor de idade, mas está acompanhado. Sejam bem-vindos!");
+			} else {
+			System.out.println("Você é menor de idade. Infelizmente você não pode entrar.");
+			}
+		}
+	}
+
+}

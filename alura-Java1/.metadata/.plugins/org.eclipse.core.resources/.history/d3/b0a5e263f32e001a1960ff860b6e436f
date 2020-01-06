@@ -1,0 +1,7 @@
+
+public class TestaVariaveis {
+	//statement não funciona fora dos métodos
+	public static void main(String[] args) {
+		
+	}
+}

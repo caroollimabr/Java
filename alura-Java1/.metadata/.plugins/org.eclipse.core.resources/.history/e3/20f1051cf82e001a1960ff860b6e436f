@@ -1,0 +1,26 @@
+
+public class TestaPontoFlutuante {
+	
+	public static void main(String[] args) {
+		
+		double salario; //double aceita decimal e inteiro
+		salario = 6250.70;
+		System.out.println("Meu salário é " + salario + ".");
+	
+		double idade = 27;
+		
+		double divisao = 3.14 / 2;
+		System.out.println(divisao);
+		
+		int outraDivisao = 5 / 2; //o Java arredonda o resultado para inteiro
+		System.out.println(outraDivisao);
+		
+		double novaTentativa = 5 / 2; //o Java entende que inteiro dividido por inteiro resulta em inteiro
+		System.out.println(novaTentativa);
+		
+		double estaVai = 5.0 / 2.0;
+		System.out.println(estaVai);
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+
+public class TestaVariaveis {
+	//statement não funciona fora dos métodos
+	public static void main(String[] args) {
+		System.out.println("Novo teste");
+		
+		int idade;
+		idade = 20 + 10;
+		
+		System.out.println(idade);
+		
+		idade = (5 * 5) + 2;
+		
+		System.out.print(idade); //print não pula linha
+		//println pula para a linha de baixo
+		
+		System.out.println("A idade é " + idade + ".");
+		
+	}
+}

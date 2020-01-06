@@ -1,0 +1,19 @@
+
+public class TestaConversao {
+	
+	public static void main(String[] args){
+		double salario = 6270.50;
+		int valor = (int) salario; //int pode armazenar até 2 bilhões 
+		System.out.println(valor);
+		
+		long numeroGrande = 82390139912808L; //long armazena mais que 2 bilhões
+		short valorPequeno = 2131; //guarda valor até 16 bits (32000)
+		byte menorAinda = 127; // guarda valor até 127
+		
+		double valor1 = 0.2;
+		double valor2 = 0.1;
+		double total = valor1 + valor2;
+		
+		System.out.println(total);
+	}
+}

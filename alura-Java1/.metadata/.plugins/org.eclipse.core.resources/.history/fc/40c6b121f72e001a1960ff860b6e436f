@@ -1,0 +1,11 @@
+
+public class TestaPontoFlutuante {
+	
+	public static void main(String[] args) {
+		
+		double salario; //double aceita decimal
+		salario = 6250.70;
+		System.out.println("Meu salário é " + salario + ".");
+	}
+
+}

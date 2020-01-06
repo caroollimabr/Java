@@ -1,0 +1,12 @@
+
+public class TestaWhile {
+	public static void main(String[] args) {
+		int contador = 0;
+		// while, assim como o if, também recebe uma expressão booleana
+		while (contador <= 10) {
+			System.out.println(contador);
+			contador += 1;//herança do C: contador = contador + 1
+		}
+		System.out.println(contador);//faz o 11 aparecer
+	}
+}

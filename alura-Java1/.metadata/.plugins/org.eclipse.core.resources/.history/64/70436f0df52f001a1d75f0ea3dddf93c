@@ -1,0 +1,15 @@
+
+public class TestaLacos2 {
+	public static void main (String[] args) {
+		for (int linha = 1; linha < 10; linha++) {
+			for(int coluna = 0; coluna < 10; coluna++) {
+				if(coluna > linha) {
+					break; //break: para de executar o laço mais próximo (no caso)
+				}
+				System.out.print("*");
+			}
+			System.out.println();//pula uma linha a cada ciclo do for central
+		}
+		//fim do for
+	}
+}

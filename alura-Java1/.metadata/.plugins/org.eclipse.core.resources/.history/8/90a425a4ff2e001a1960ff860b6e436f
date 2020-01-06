@@ -1,0 +1,16 @@
+
+public class TestaCaracteres {
+	
+	public static void main (String[] args) {
+		char letra = 'a'; //char só aceita UM caractere
+		System.out.println(letra);
+		
+		char valor = 65; 
+		System.out.println(valor); // imprime letra equivalente ao unicode: B
+		
+		
+		valor = (char) (valor + 1);
+		System.out.println(valor);//vai dar C
+	}
+
+}

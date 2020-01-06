@@ -1,0 +1,14 @@
+
+public class TestaValores {
+
+	public static void main(String[] args) {//main ctrl spaço enter: adiciona public static void main
+		int primeiro = 5;
+		int segundo = 7;
+		segundo = primeiro;
+		
+		primeiro = 10;
+		primeiro = segundo;
+		
+		System.out.println(segundo);
+	}
+}
