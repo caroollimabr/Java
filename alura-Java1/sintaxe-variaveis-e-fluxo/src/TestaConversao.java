@@ -25,6 +25,6 @@ byte	1 byte
 short	2 bytes
 char	2 bytes
 int	4 bytes
-float	4 bytes
+float	4 bytes (embora ocupe menos espaço, menos usado que double)
 long	8 bytes
 double	8 bytes*/
