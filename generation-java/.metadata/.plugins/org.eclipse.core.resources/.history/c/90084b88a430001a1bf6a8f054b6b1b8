@@ -1,0 +1,32 @@
+package com.generation.primeiroPrograma;
+
+import java.util.Scanner;
+
+public class Estoque {
+	public static void main(String[] args) {
+		//habilita a leitura de dados inseridos pelo usuário
+		Scanner entrada = new Scanner (System.in);
+		
+		System.out.print("Digite a quantidade mínima: ");
+		//transforma esses dados em váriável
+		double qteMin = entrada.nextDouble();
+		
+		System.out.println("Digite a quantidade máxima: ");
+		double qteMax = entrada.nextDouble();
+		
+		double estoqueMedio = (qteMin + qteMax) / 2;
+		System.out.println("Estoque médio: " + estoqueMedio);
+		
+	}
+}
+
+/* A CLASSE SCANNER (HABILITA A OBTENÇÃO DE DADOS ATRAVÉS DA DIGITAÇÃO)
+Scanner scanner = new Scanner(System.in);
+int numeroInteiro = scanner.nextInt();
+byte numeroByte = scanner.nextByte();
+long numeroLong = scanner.nextLong();
+boolean booleano = scanner.nextBoolean();
+float numeroFloat = scanner.nextFloat();
+double numeroDouble = scanner.nextDouble();
+ */
+ */

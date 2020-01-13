@@ -1,0 +1,24 @@
+package com.generation.primeiroPrograma;
+
+import java.util.Scanner;
+
+public class Login {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Login: ");
+		String login = entrada.nextLine();
+
+		System.out.print("Senha: ");
+		String senha = entrada.nextLine();
+
+		if (login.equals("carool.limabr") && senha.equals("12345bla")) {
+			
+			System.out.print("Bem-vindo, " + login + "!");
+		
+		} else {
+
+			System.out.print("Login e/ou senha inválida(s).");
+		}
+	}
+}

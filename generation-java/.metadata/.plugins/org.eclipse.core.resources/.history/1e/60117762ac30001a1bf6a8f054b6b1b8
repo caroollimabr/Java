@@ -1,0 +1,15 @@
+package com.generation.primeiroPrograma;
+
+public class CalculaIdade {
+	public static void main(String[] args) {
+		
+		System.out.print("Qual é a sua idade? Digite os anos: ");
+		
+		System.out.print("Digite os meses: ");
+		
+		System.out.print("Digite os dias: ");
+		
+		System.out.print("Idade total em dias: " + );
+		
+	}
+}

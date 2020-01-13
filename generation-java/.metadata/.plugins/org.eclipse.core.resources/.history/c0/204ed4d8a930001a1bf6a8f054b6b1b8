@@ -1,0 +1,26 @@
+package com.generation.primeiroPrograma;
+
+import java.util.Scanner;
+
+public class Comissao {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.print("Identificação do vendedor: ");
+		int idVendedor = entrada.nextInt();
+		
+		System.out.print("ID da peça: ");
+		int idPeca = entrada.nextInt();
+		
+		System.out.print("Preço unitário da peça: ");
+		float precoPeca = entrada.nextInt();
+		
+		System.out.print("Quantidade de peças vendidas: ");
+		float pecasVendidas = entrada.nextFloat();
+		
+		float comissao = entrada.nextFloat();
+		System.out.print("Comissão: ");
+		
+	}
+}

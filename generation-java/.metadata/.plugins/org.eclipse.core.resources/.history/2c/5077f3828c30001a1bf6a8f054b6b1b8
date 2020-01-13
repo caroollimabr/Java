@@ -1,0 +1,20 @@
+package com.generation.primeiroPrograma;
+
+import java.util.Scanner;
+
+public class Idade {
+	public static void main(String[] args) {
+
+		Scanner sn = new Scanner(System.in);
+
+		System.out.print("Digite a idade da sua mãe: ");
+
+		int idademae = sn.nextInt();
+
+		System.out.print("Digite a sua idade: ");
+		int idade = sn.nextInt();
+
+		int diferenca = idademae - idade;
+		System.out.print("Vocês têm " + diferenca + " anos de diferença.");
+	}
+}

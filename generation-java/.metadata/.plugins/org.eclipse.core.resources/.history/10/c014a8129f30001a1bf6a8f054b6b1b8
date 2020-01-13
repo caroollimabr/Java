@@ -1,0 +1,7 @@
+package com.generation.primeiroPrograma;
+
+public class Estoque {
+	public static void main(String[] args) {
+		
+	}
+}

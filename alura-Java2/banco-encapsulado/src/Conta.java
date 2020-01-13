@@ -1,7 +1,7 @@
 
 public class Conta {
 	// atributos (semelhantes ao var)
-	private double saldo; /* se vc não especificar, todas os saldos terão esse valor ---- ATRIBUTO PRIVADO: não pode ser lido ou modificado fora da classe (ENCAPSULAMENTO). O comum é que todos os atributos sejam privados. Assim, vc se previne de mudanças de privacidade futuras */
+	private double saldo = 100; /* se vc não especificar, todas os saldos terão esse valor ---- ATRIBUTO PRIVADO: não pode ser lido ou modificado fora da classe (ENCAPSULAMENTO). O comum é que todos os atributos sejam privados. Assim, vc se previne de mudanças de privacidade futuras */
 	private int agencia;
 	private int numero;
 	private Cliente titular; /*COMPOSIÇÃO: tipo Cliente porque é atributo da classe Cliente */
@@ -15,13 +15,13 @@ public class Conta {
 			System.out.println("Estou criando uma conta " + this.numero);
 	}
 	// método deposita
-	void deposita(double valor) { 
+	public void deposita(double valor) { 
 		this.saldo = this.saldo + valor; // valor é um argumento, saldo é variável, por isso coloca-se this (é opcional, mas recomendado)
 
 	}
 	
 	//metodo saca
-	public boolean saca(double valor) { // método públic tipo boolean
+	public boolean saca(double valor) { // método public tipo boolean
 		if (this.saldo >= valor) {
 			this.saldo -= valor; // saldo = saldo - valor
 			return true; // return para a execução do método e retorna para quem está chamando

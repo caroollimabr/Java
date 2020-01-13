@@ -1,0 +1,39 @@
+package com.exerciciojava.exercicioJava3;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Scanner ler = new Scanner(System.in);
+       
+       int numeros, a, b;
+       boolean s = true;
+       
+      
+      
+       
+       
+       while(s) {
+       System.out.println("Digite qualquer número positivo ou negativo");
+       numeros = ler.nextInt();
+       
+       if(numeros < 0) {
+    	   a = numeros;
+    	   System.out.println("numeros A: " + a);
+       } else {
+    	   b = numeros;
+    	   System.out.println("numeros B: " + b);
+       }
+       }
+       
+      
+       
+       
+    }
+}

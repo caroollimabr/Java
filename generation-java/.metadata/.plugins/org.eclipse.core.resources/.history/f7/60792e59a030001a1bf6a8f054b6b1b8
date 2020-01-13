@@ -1,0 +1,12 @@
+package com.generation.primeiroPrograma;
+
+public class Estoque {
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner (System.in);
+		System.out.print("Digite a quantidade mínima: ");
+		double qteMin = entrada.nextInt;
+		
+		
+		double estoqueMedio = (qteMin + qteMax) / 2;
+	}
+}

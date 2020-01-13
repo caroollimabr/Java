@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Generation\Desktop\java-carol2\idadeNadador"/>
+			<item value="C:\Users\Generation\Desktop\java-carol2\ordemDecrescente2"/>
+			<item value="C:\Users\Generation\Desktop\java-carol2\ordemDecrescente"/>
+			<item value="C:\Users\Generation\Desktop\java-carol2\multiplo10"/>
+			<item value="C:\Users\Generation\Desktop\java-carol2\segundoPrograma\src\main\java\com\generation\segundoPrograma\App.java"/>
+			<item value="C:\Users\Generation\Desktop\java-carol2"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.generation.armazenamentoNumeros"/>
+			<item value="com.generation.positivoNegativo"/>
+			<item value="com.generation.ordemDecrescente2"/>
+			<item value="com.generation.ordemDecrescente"/>
+			<item value="com.generation.multiplo10"/>
+			<item value="com.generation.idadeNadador"/>
+			<item value="com.generation"/>
+			<item value="com.generation.segundoPrograma"/>
+		</list>
+		<list key="groupId">
+			<item value="com.generation"/>
+		</list>
+		<list key="artifactId">
+			<item value="armazenamentoNumeros"/>
+			<item value="positivoNegativo"/>
+			<item value="ordemDecrescente2"/>
+			<item value="ordemDecrescente"/>
+			<item value="multiplo10"/>
+			<item value="idadeNadador"/>
+			<item value="segundoPrograma"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

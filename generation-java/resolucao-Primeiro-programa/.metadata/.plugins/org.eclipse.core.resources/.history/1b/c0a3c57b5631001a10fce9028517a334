@@ -1,0 +1,33 @@
+package com.exerciciojava.exercicioJava3;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Scanner ler = new Scanner(System.in);
+       
+       int numero, a, b;
+       
+       System.out.println("Digite qualquer número positivo ou negativo ");
+       numero = ler.nextInt();
+       
+       
+       int x  = 5;
+       do {
+    	   System.out.println("Deseja acrescentar mais algum número? ");
+    	   x++;
+    	   
+       } while(x < 5);
+    	   
+        
+       
+       
+    
+    }
+}

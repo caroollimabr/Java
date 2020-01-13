@@ -1,0 +1,22 @@
+package com.generation.primeiroPrograma;
+
+import java.util.Scanner;
+
+public class CalculaIdade {
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.print("Qual é a sua idade? Digite os anos: ");
+		float idadeAnos = entrada.nextFloat();
+		
+		System.out.print("Digite os meses: ");
+		float idadeMeses = entrada.nextFloat();
+		
+		System.out.print("Digite os dias: ");
+		float idadeDias = entrada.nextFloat();
+		
+		Float idadeTotal = (idadeAnos * 365) + (idadeMeses * 30) + idadeDias
+		System.out.print("Sua idade em dias: " + idadeTotal);
+		
+	}
+}

@@ -1,0 +1,18 @@
+package com.exerciciojava.exercicioJava4;
+
+import java.util.Scanner;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Scanner ler = new Scanner (System.in);
+        
+        System.out.println("Escolha qual opreção deseja realizar, digite 1, 2, 3, 4: ");
+        System.out.println(" 1 - Adição\n 2 - Subtração\n 3 - Multiplicação\n 4 - Divisão\n");
+    }
+}

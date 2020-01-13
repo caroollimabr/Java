@@ -1,0 +1,23 @@
+package com.generation.positivoNegativo;
+
+import java.util.Scanner;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        int numero;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite um numero: ");
+        numero = entrada.nextInt();
+        
+        if (numero > 0) {
+        System.out.println("Esse numero e positivo");
+        } else if (numero < 0) {
+        System.out.println("Esse numero e negativo");
+        } else {
+        System.out.println("Esse numero é 0");
+        }
+    }
+}

@@ -1,0 +1,30 @@
+package com.generation.positivoNegativo;
+
+import java.util.Scanner;
+
+public class App {
+	public static void main( String[] args )
+    {
+        int numero;
+        String parar = "sim";
+        
+        do {
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("Digite um numero: ");
+        numero = entrada.nextInt();
+        
+        if (numero > 0) {
+        System.out.print("Esse numero e positivo");
+        } else if (numero < 0) {
+        System.out.print("Esse numero e negativo");
+        } else {
+        System.out.print("Esse numero é 0");
+        }
+        
+        System.out.println("Parar? ");
+        parar = entrada.next();
+        
+        } while (parar != "sim");
+    }
+}
