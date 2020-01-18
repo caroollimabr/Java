@@ -4,7 +4,7 @@ public class Cliente {
 	private String cpf;
 	private String profissao;
 	
-	//getters and setters
+	
 	public String getNome() {
 		return nome;
 	}

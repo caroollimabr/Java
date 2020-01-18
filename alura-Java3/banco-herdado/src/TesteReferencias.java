@@ -9,12 +9,9 @@ public class TesteReferencias {
 		 * 
 		 * Quando o código é executado, o método específico sempre será chamado (vantagem polimorfismo)
 		 */
-		Gerente g = new Gerente(); //decl. variável = new objeto();
-		g.setNome("Fulano");
-		g.setSalario(5000.0);
-		
-		Funcionario f = new Funcionario();
-		f.setSalario(2000.0);
+		Gerente g1 = new Gerente(); //decl. variável = new objeto();
+		g1.setNome("Fulano");
+		g1.setSalario(5000.0);
 		
 		EditorVideo ev = new EditorVideo();
 		ev.setSalario(2500.0);
@@ -23,8 +20,7 @@ public class TesteReferencias {
 		d.setSalario(2000.0);
 		
 		ControleBonificacao controle = new ControleBonificacao();
-		controle.registra(g);
-		controle.registra(f);
+		controle.registra(g1);
 		controle.registra(ev);
 		controle.registra(d);
 		

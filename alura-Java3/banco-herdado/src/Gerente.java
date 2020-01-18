@@ -1,28 +1,30 @@
+//HERANCA MULTIPLA: Gerente é um funcionário que precisa de senha
+//em Java, heranca multipla é resolvida com INTERFACE
 //Criação da classe e seus atributos
-public class Gerente extends Funcionario { /*
+public class Gerente extends Funcionario implements Autenticavel { /*
 											 * HERANÇA: a classe gerente herda todos os atributos da classe Funcionario
 											 * Gerente (classe filha) é um funcionário.
 											 */
+	private AutenticacaoUtil autenticador;
+	
+	public Gerente() {
+		this.autenticador = new AutenticacaoUtil();
+	}
+	
 
-	private int senha; // atributo é iniciado com valor 0
-
-	// getters and setters
-
-	@Override // suspende um método automático
 	public double getBonificacao() { // reescrita da mesma assinatura do método de Funcionario
 		System.out.println("Chamando o método bonificação do GERENTE");
-		return super.getBonificacao() + super.getSalario(); // SUPER: salário vem da super class
+		return super.getSalario(); // SUPER: salário vem da super class
 	}
-
+	
+	@Override
 	public void setSenha(int senha) {
-		this.senha = senha;
+		this.autenticador.setSenha(senha);
+	}
+	
+	@Override
+	public boolean autentica(int senha) {
+		return this.autenticador.autentica(senha);
 	}
 
-	public boolean autentica(int senha) {
-		if (this.senha == senha) {
-			return true;
-		} else {
-			return false;
-		}
-	}
 }

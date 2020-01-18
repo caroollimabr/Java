@@ -1,34 +1,32 @@
-//ABSTRACT: classe não vai ser usada diretamente, mas as //outras vão pegar métodos, construtor e atributos dela (abstract pode //ser usado em métodos tb)
 
-
-public abstract class Conta {
+public class Conta {
 	// atributos (semelhantes ao var)
-	protected double saldo; //nesse caso, protected liberou o atributo para os filhos
-	/*
-	 * se vc não especificar, todas os saldos terão esse valor ---- ATRIBUTO
-	 * PRIVADO: não pode ser lido ou modificado fora da classe (ENCAPSULAMENTO). O
-	 * comum é que todos os atributos sejam privados. Assim, vc se previne de
-	 * mudanças de privacidade futuras
-	 */
+	private double saldo = 100; /*
+								 * se vc não especificar, todas os saldos terão esse valor ---- ATRIBUTO
+								 * PRIVADO: não pode ser lido ou modificado fora da classe (ENCAPSULAMENTO). O
+								 * comum é que todos os atributos sejam privados. Assim, vc se previne de
+								 * mudanças de privacidade futuras
+								 */
 	private int agencia;
 	private int numero;
 	private Cliente titular; /* COMPOSIÇÃO: tipo Cliente porque é atributo da classe Cliente */
 	private static int total = 0; // static: o atributo é da classe, e não só do objeto.
 
-	public Conta(int agencia, int numero) {// construtor: oferece a possibilidade de inicializar alguns dados e receber
-// parâmetros
-		Conta.total++; //Conta.total = ela mesma + 1
-		// System.out.println("O total de contas é " + Conta.total);
+//construtor:  oferece a possibilidade de inicializar alguns dados e receber parâmetros
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+		System.out.println("O total de contas é " + Conta.total);
 		this.agencia = agencia;
 		this.numero = numero;
-		//this.saldo = 100;
-		// System.out.println("Estou criando uma conta " + this.numero);
+		System.out.println("Estou criando uma conta " + this.numero);
 	}
 
-	// método deposita: ABSTRACT (não pode ter implementação)
-	public abstract void deposita(double valor); // valor é um argumento, saldo é variável, por isso coloca-se this (é opcional,
-// mas recomendado)
+	// método deposita
+	public void deposita(double valor) {
+		this.saldo = this.saldo + valor; // valor é um argumento, saldo é variável, por isso coloca-se this (é opcional,
+											// mas recomendado)
 
+	}
 
 	// metodo saca
 	public boolean saca(double valor) { // método public tipo boolean
@@ -41,7 +39,7 @@ public abstract class Conta {
 	}
 
 	// método transfere
-	public boolean transfere(double valor, Conta destino) {
+	public boolean transfere(double valor, Conta destino) { // vírgula a cada argumento
 		if (this.saca(valor)) {
 			destino.deposita(valor);
 			return true;
