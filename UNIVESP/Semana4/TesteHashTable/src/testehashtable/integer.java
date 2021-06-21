@@ -1,0 +1,5 @@
+package testehashtable;
+
+class integer {
+    
+}
